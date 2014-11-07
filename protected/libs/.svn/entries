@@ -1,0 +1,43 @@
+10
+
+dir
+49992
+https://svn.bbscore.com/svn/bbscore-repos/tags/deyu/protected/libs
+https://svn.bbscore.com/svn/bbscore-repos
+
+
+
+2013-10-22T07:49:23.502049Z
+41396
+shenhongming
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bf39bffa-46e1-45f6-b5e2-eacff6a6ffff
+
+PHPMailer_v5.1
+dir
+
+functions
+dir
+
+phpexcel
+dir
+
+tools
+dir
+
+yii
+dir
+

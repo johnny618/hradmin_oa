@@ -1,0 +1,3 @@
+@charset "utf-8";
+.page_box{ float: right; margin-right: 20px;}
+.page_box a.cur,.page_box a.cur:hover{ color: #f60;}

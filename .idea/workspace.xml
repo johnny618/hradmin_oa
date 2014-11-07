@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7e267d4-7d9d-49db-8f0c-7f9aa1d812b0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="hradmin-oa.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="hradmin-oa" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/protected/controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/protected/components/WebController.php" />
+        <option value="$PROJECT_DIR$/protected/datainterface/LogicUser.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/workreport/MonitorController.php" />
+        <option value="$PROJECT_DIR$/protected/views/workreport/monitor/report_monitor.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/assets/MonitorController.php" />
+        <option value="$PROJECT_DIR$/protected/datainterface/DAO_Base.php" />
+        <option value="$PROJECT_DIR$/protected/components/Bll_Form.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/protected/datainterface/LogicRequestProcess.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1918" />
+    <option name="width" value="1924" />
+    <option name="height" value="1202" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YYiiRedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hradmin-oa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fitgear" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7e267d4-7d9d-49db-8f0c-7f9aa1d812b0" name="Default" comment="" />
+      <created>1409019359513</created>
+      <updated>1409019359513</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1918" y="0" width="1924" height="1202" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21925133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.bashrc">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bashrc">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1042" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/points/export/export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="10" selection-start="2752" selection-end="2758" vertical-scroll-proportion="0.33333334" vertical-offset="1174" max-vertical-offset="2496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/document/CreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="0.4472477" vertical-offset="0" max-vertical-offset="3770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ajax/ApiajaxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="187" selection-end="210" vertical-scroll-proportion="0.26834863" vertical-offset="0" max-vertical-offset="3432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/document/model/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="12" selection-start="5131" selection-end="5131" vertical-scroll-proportion="0.0" vertical-offset="2470" max-vertical-offset="4498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/document/create/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="22" selection-start="3706" selection-end="3716" vertical-scroll-proportion="0.7591743" vertical-offset="1418" max-vertical-offset="2340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/settings/FormviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="45" selection-start="638" selection-end="638" vertical-scroll-proportion="0.025540275" vertical-offset="676" max-vertical-offset="7956" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="0.5618861" vertical-offset="0" max-vertical-offset="3588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/settings/formnode/node_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/settings/process/process_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="46" selection-start="11247" selection-end="11253" vertical-scroll-proportion="0.0" vertical-offset="4914" max-vertical-offset="16692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/settings/formnode/node_operate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="14" selection-start="4151" selection-end="4151" vertical-scroll-proportion="0.9285714" vertical-offset="1690" max-vertical-offset="10400" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/datainterface/LogicWorkReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="27" selection-start="3298" selection-end="3298" vertical-scroll-proportion="0.9459725" vertical-offset="1611" max-vertical-offset="5512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/datainterface/LogicUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="45" selection-start="1066" selection-end="1084" vertical-scroll-proportion="0.5373281" vertical-offset="259" max-vertical-offset="4056" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/workreport/MonitorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="1418" selection-end="1432" vertical-scroll-proportion="-5.1355934" vertical-offset="347" max-vertical-offset="4368" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/workreport/monitor/report_monitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.34245187" vertical-offset="0" max-vertical-offset="4524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Pexcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="58" selection-start="1913" selection-end="1963" vertical-scroll-proportion="-34.357143" vertical-offset="0" max-vertical-offset="2522" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/assets/MonitorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="1.7142857" vertical-offset="48" max-vertical-offset="1066" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/MyConst.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.285715" vertical-offset="568" max-vertical-offset="3614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="33.42857" vertical-offset="936" max-vertical-offset="2002" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/WebController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="882" selection-end="882" vertical-scroll-proportion="-21.357143" vertical-offset="0" max-vertical-offset="1014" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/datainterface/LogicDocAuthority.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="633" selection-end="633" vertical-scroll-proportion="0.45972496" vertical-offset="0" max-vertical-offset="1378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/DbUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="48" selection-start="74" selection-end="95" vertical-scroll-proportion="-4.642857" vertical-offset="0" max-vertical-offset="442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/cli/views/webapp/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="333" selection-end="333" vertical-scroll-proportion="-0.6129666" vertical-offset="858" max-vertical-offset="2470" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.714286" vertical-offset="412" max-vertical-offset="1872" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/db/schema/CDbSchema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="291" column="21" selection-start="9051" selection-end="9051" vertical-scroll-proportion="0.21709234" vertical-offset="7215" max-vertical-offset="15600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/yiilite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8777" column="20" selection-start="254191" selection-end="254191" vertical-scroll-proportion="27.714285" vertical-offset="228458" max-vertical-offset="261898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/console/CConsoleApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="21" selection-start="3480" selection-end="3480" vertical-scroll-proportion="-7.892857" vertical-offset="2171" max-vertical-offset="4602" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/console/CConsoleCommandRunner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3344" selection-end="3344" vertical-scroll-proportion="-7.571429" vertical-offset="2674" max-vertical-offset="3978" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/db/CDbConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="466" column="18" selection-start="17017" selection-end="17017" vertical-scroll-proportion="-7.571429" vertical-offset="11722" max-vertical-offset="21060" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/db/schema/CDbCriteria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="34" selection-start="10142" selection-end="10156" vertical-scroll-proportion="-2.4154003" vertical-offset="9144" max-vertical-offset="16614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/datainterface/DAO_Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="9" selection-start="298" selection-end="298" vertical-scroll-proportion="0.33202356" vertical-offset="52" max-vertical-offset="4706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/framework/db/ar/CActiveFinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1265" column="0" selection-start="38902" selection-end="38902" vertical-scroll-proportion="0.3100304" vertical-offset="32922" max-vertical-offset="41964" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="570" column="34" selection-start="19274" selection-end="19274" vertical-scroll-proportion="0.025540275" vertical-offset="14794" max-vertical-offset="28288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/request/main_form_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="5" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.94499016" vertical-offset="0" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ajax/RequestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="259" column="33" selection-start="16080" selection-end="16080" vertical-scroll-proportion="0.37082067" vertical-offset="6732" max-vertical-offset="11310" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/settings/HrController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="29" selection-start="3062" selection-end="3073" vertical-scroll-proportion="0.31925344" vertical-offset="1755" max-vertical-offset="3042" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/settings/hr/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="28" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.51473475" vertical-offset="1634" max-vertical-offset="2652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2816" selection-end="2816" vertical-scroll-proportion="-55.714287" vertical-offset="0" max-vertical-offset="2106" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="30" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.3614931" vertical-offset="958" max-vertical-offset="1976" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.17878193" vertical-offset="0" max-vertical-offset="1018" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Bll_YBR.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/AjaxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/API_OA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="36" selection-start="8036" selection-end="8045" vertical-scroll-proportion="0.0" vertical-offset="6500" max-vertical-offset="7618" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Bll_Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="2392" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Bll_Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="402" column="50" selection-start="16105" selection-end="16105" vertical-scroll-proportion="-2.7857144" vertical-offset="10374" max-vertical-offset="11440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/datainterface/LogicRequestProcess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="9" selection-start="6345" selection-end="6345" vertical-scroll-proportion="0.025540275" vertical-offset="3510" max-vertical-offset="5642">
+          <folding>
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select count..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..request_id..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..request_process..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="SELECT id FR..work_form_request..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select node_..node_operate..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..request_id..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select reque..request_process..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="SELECT id FR..work_form_request..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select node_..node_operate..." />
+            <marker date="1415347946610" expanded="true" signature="-1:-1" placeholder="select next_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

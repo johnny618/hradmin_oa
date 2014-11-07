@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>新建：流程编辑</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div class="set">
+		<div id="settype" class="settype">
+			<div class="settitle">新建：流程类型</div>
+			<div id="setheight" class="settype_main settype_new_main">
+				<div class="settype_table">
+					<form id="setform" name="newform" action=""><!--新建流程 开始-->
+						<div class="settype_new">
+							<div class="settype_newbox">
+								<h4>基本信息</h4>
+									<ul class="clearfix">
+										<li>
+											<label class="fl">名称</label>
+											<input class="fl" type="text" name="names" value="">
+											<span class="fl">!</span>
+											<b id="settype_formerr" class="fl">名称不能为空</b>
+										</li>
+										<li>
+											<label class="fl">描述</label>
+											<input class="fl settype_newbox_input" type="text" name="describe" value="">
+											<span class="fl">!</span>
+											<b id="settype_formerr" class="fl">描述不能为空</b>
+										</li>
+										<li>
+											<label class="fl">显示顺序</label>
+											<input class="fl" type="text" name="order" value="">
+										</li>
+									</ul>
+							</div>
+						</div>
+						<div class="settype_button"><a class="settype_button_a" onclick="return newForm()">保存</a><a id="back_href" target="main" onclick="backForm()">返回</a></div>
+					</form><!--新建流程 结束-->
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>
+<script type="text/javascript">
+//自适应高度
+function heightChange(){
+	var setType = document.getElementById("settype");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 32 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	setType.style.minHeight = bodyHeight + "px";
+}
+window.onload = heightChange();
+window.onresize = heightChange;
+</script>
+</div>
+</body>
+</html>

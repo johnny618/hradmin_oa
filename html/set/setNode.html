@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>路径设置</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div id="roadheight" class="set">
+	<div id="road_right" class="road_right"><!--右侧工作流 开始-->
+            	<div class="node_tab"><!--节点tab菜单 开始-->
+                	<ul class="clearfix">
+                    	<li class="node_tabborder"><a href="#">节点信息</a></li>
+                        <li><a href="#">出口信息</a></li>
+                        <li><a href="#">图形编辑</a></li>
+                    </ul>
+                </div><!--节点tab菜单 结束-->
+                <div class="node_table"><!--节点表格 开始-->
+                	<div class="node_btn"><a href="#">编辑</a>节点信息</div>
+                    <table width="96%" cellpadding="0" cellspacing="0">
+                    	<tr>
+                        	<th width="37%"><h4 class="node_margin">节点名称</h4></th>
+                            <th width="21%"><h4>节点类型</h4></th>
+                            <th width="26%"><h4>节点表单字段</h4></th>
+                            <th width="16%"><h4>操作者</h4></th>
+                        </tr>
+                        <tr>
+                        	<td><label>申请人</label></td>
+                            <td>创建</td>
+                            <td>设置</td>
+                            <td><a href="author.html">申请人</a></td>
+                        </tr>
+                        <tr>
+                        	<td><label>项目负责人</label></td>
+                            <td>创建</td>
+                            <td>设置</td>
+                            <td><a href="归档">上级审批</a></td>
+                        </tr>
+                        <tr>
+                        	<td><label>人事行政总监</label></td>
+                            <td>批准</td>
+                            <td>设置</td>
+                            <td><a href="author.html">人事行政总监</a></td>
+                        </tr>
+                        <tr>
+                        	<td><label>人事专员</label></td>
+                            <td>批准</td>
+                            <td>设置</td>
+                            <td><a href="author.html">人事行政</a></td>
+                        </tr>
+                        <tr>
+                        	<td><label>归档</label></td>
+                            <td>归档</td>
+                            <td>设置</td>
+                            <td><a href="author.html">归档</a></td>
+                        </tr>
+                    </table>
+                </div><!--节点表格 结束-->
+            </div><!--右侧工作流结束-->
+         </div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>	
+ <script type="text/javascript">
+ //自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	roadRight.style.minHeight = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+//自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	roadRight.style.minHeight = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+//表单设置
+$(function(){
+	$(".node_table tr:odd").find("td").css({"background-color":"#f9f9f9","border-bottom-color":"#eef1f2"});
+	});
+</script>
+</div>
+</body>
+</html>

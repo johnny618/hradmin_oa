@@ -1,0 +1,1 @@
+<?php $this->widget('RequestTableWidget', array('fid' => $id, 'current_form_node' => $current_form_node));?>

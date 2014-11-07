@@ -1,0 +1,14 @@
+.mywd{width: 100%; padding-top: 9px;}
+.mywd_main{width: 97%; margin: 0 auto;}
+.mywd_title{height: 30px; border-top: 1px solid #eee; border-right: 1px solid #ebebeb; border-bottom: 1px solid #e5e5e5; background-color: #dbdbdb; text-align: center;}
+.mywd_title span{height: 30px; font-size: 16px; color: #616161; display: inline-block; background: url(../../images/mywd_ico.png) no-repeat 0 3px; padding-left: 41px; line-height: 30px;}
+.mywd_box{background-color: #fff; padding-top: 7px;}
+.mywd_table{width: 98%; margin: 0 auto; border: 1px solid #e7e7e7;}
+.mywd_table_box{width: 95%; margin: 0 auto; padding: 18px 0 21px;}
+.mywd_table_box table{vertical-align: middle;}
+.mywd_table_box table th h3{height: 32px; font-size: 16px; border-bottom: 2px solid #cbcbcb; margin: 0 3px 17px 0; text-align: left;}
+.mywd_table_box table td p{height: 41px; line-height: 41px; font-size: 14px; border-bottom: 1px solid #eee; margin-right: 3px;}
+.mywd_table_box table td p span{color: #ff1c1c;}
+.mywd_a{padding-left: 13px;}
+.mywd_table_box table td a{color: #666;}
+.mywd_table_box table td a:hover{color: #f60;}

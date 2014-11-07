@@ -1,0 +1,11 @@
+2014/03/13 15:01:12 [error] [php] include(Kq_Data.php): failed to open stream: No such file or directory (/Users/peiyifei/yiban/kq/protected/libs/yii/YiiBase.php:421)
+Stack trace:
+#0 /Users/peiyifei/yiban/kq/protected/commands/TmpCommand.php(5): spl_autoload_call()
+#1 unknown(0): TmpCommand->actionIndex()
+#2 /Users/peiyifei/yiban/kq/protected/libs/yii/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /Users/peiyifei/yiban/kq/protected/libs/yii/console/CConsoleCommandRunner.php(67): TmpCommand->run()
+#4 /Users/peiyifei/yiban/kq/protected/libs/yii/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#5 /Users/peiyifei/yiban/kq/protected/libs/yii/base/CApplication.php(169): CConsoleApplication->processRequest()
+#6 /Users/peiyifei/yiban/kq/protected/libs/yii/yiic.php(33): CConsoleApplication->run()
+#7 /Users/peiyifei/yiban/kq/protected/yiic.php(7): require_once()
+

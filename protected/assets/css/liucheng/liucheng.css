@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #f5f5f5;}
+#liuch{width: 97%; margin: 10px auto 0; background-color: #fff; border: 1px solid #eaebed;}
+/*#liuch .qjia_btn a{color: #727272; border: 1px solid #dedede; display: inline-block; margin-right: 5px;}*/
+.qjia_btn{text-align: center; margin: 8px 0 10px;}
+.liuch_title{height: 30px; background-color: #dbdbdb; text-align: center; color: #757575; line-height: 30px; font-size: 14px; border-top: 1px solid #e5e5e7; border-bottom: 1px solid #e5e5e7;}
+.lcIndex{padding: 32px 0 0 50px;}
+.lcIndex_box1{width: 35%; float: left;}
+.lcIndex_box2{width: 35%; float: left;}
+.lcIndex_box3{width: 25%; float: right;}
+.lcIndex li{width: 100%; float: left; margin-bottom: 37px;}
+.lcIndex li h4{font-size: 12px; color: #000;}
+.lcIndex_sub{margin-top: 4px; padding-left: 54px;} 
+.lcIndex_sub p{height: 24px; background:url(../../images/lc_ico1.png) no-repeat 0 9px; padding-left: 14px;}
+.lcIndex .lcIndex_sub a{color: #333;}
+.lcIndex .lcIndex_sub a:hover{color: #f60;}
+/*---流程主页面 结束---*/
+.qjia_title{font-size: 14px; color: #000; text-align: center; margin-top: 15px;}
+.qjia_table{width: 98%; margin: 3px auto 0;}
+.qjia_table table{border: 1px solid #cfcfcf; text-align: left; vertical-align: middle;}
+.qjia_table td{height: 28px; border-bottom: 1px solid #e7e7e7;}
+.qjia_bgcolor{background-color: #f9f9f9; border-left: 1px solid #ebeef1;}
+.qjia_span{padding-left: 10px;}
+.qjia_td{padding-left: 7px;}
+.qjia_input{width: 244px; height: 23px; border: 1px solid #ededed; line-height: 23px; padding: 0 5px; display: inline; margin-right: 7px;}
+.qjia_radio{margin-top: 5px;}
+.qjia_label{display: inline; margin-right: 9px;}
+.qjia_a{width: 21px; height: 20px; display: inline-block; background:url(../../images/set_ico7.png) no-repeat 0 0; margin: 2px 7px 0 0;}
+.qjia_select{min-width: 77px; height: 23px; border: 1px solid #e0e0e0;}
+.qjia_input2{width: 129px; height: 23px; border: 1px solid #f1f1f1; padding: 0 5px; line-height: 23px;}
+.qjia_importan{font-size: 20px; color: #f00; padding-left: 5px;}
+.qjia_importan2{margin-top: 16px;}
+.qjia_textarea{width: 797px; margin: 4px 7px 4px 0;}
+.qjia_table .qjia_td .qjia_clear{height: 24px; background:url(../../images/lc_ico2.png) no-repeat 0 5px; color: #333; text-decoration: none; padding-left: 17px; display: inline; margin: 0 12px 0 19px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

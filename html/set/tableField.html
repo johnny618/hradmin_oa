@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<div class="pb20">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>表单管理：字段</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="set">
+		 <div class="settype"><!--流程类型 开始-->
+			<div class="settitle">表单管理：字段</div>
+			<div id="setheight" class="settype_main tabfd">
+            	<form name="tabfd_form" action="" method="post">
+            		<div class="tabfd_title">
+                    	<label class="fl">表单名称</label>
+                    	<input class="fl" type="text" name="names" value="" />
+                        <span class="fl">!</span>
+                	</div>
+                    <div class="tabfd_btn"><a href="#">保存</a><a href="#">返回</a></div>
+                </form>
+				<div class="settype_table tabfd_table">
+                	<div class="tabfd_add"><a href="#">批量添加</a></div>
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<th width="19"><div class="settype_margin"><p>字段名称</p></div></th>
+							<th width="19%"><p>字段显示名</p></th>
+							<th width="15%"><p>变现形式</p></th>
+                            <th width="15%"><p>字段类型</p></th>
+                            <th width="10%"><p>显示顺序</p></th>
+                            <th width="22%"><p class="settype_p">操作</p></th>
+						</tr>
+                        <tr>
+							<td><div class="settype_margin"><a href="#">abc</a></div></td>
+							<td>合计</td>
+                            <td>主表字段</td>
+                            <td>浮点数</td>
+                            <td>5.00</td>
+							<td class="tabmae_td"><a href="#">编辑</a><a href="javascript:void(0)">删除</a></td>
+						</tr>
+						<tr>
+							<td><div class="settype_margin"><a href="#">abc</a></div></td>
+							<td>预算单价</td>
+                            <td>主表字段</td>
+                            <td>浮点数</td>
+                            <td>5.00</td>
+							<td class="tabmae_td"><a href="#">编辑</a><a href="javascript:void(0)">删除</a></td>
+						</tr>
+						<tr>
+							<td><div class="settype_margin"><a href="#">abc</a></div></td>
+							<td>预算单价</td>
+                            <td>主表字段</td>
+                            <td>浮点数</td>
+                            <td>5.00</td>
+							<td class="tabmae_td"><a href="#">编辑</a><a href="javascript:void(0)">删除</a></td>
+						</tr>
+						<tr>
+							<td><div class="settype_margin"><a href="#">abc</a></div></td>
+							<td>预算单价</td>
+                            <td>主表字段</td>
+                            <td>浮点数</td>
+                            <td>5.00</td>
+							<td class="tabmae_td"><a href="#">编辑</a><a href="javascript:void(0)">删除</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div><!--流程类型 结束-->
+	</div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>
+<script type="text/javascript">
+//自适应高度
+function heightChange(){
+	var setHeight = document.getElementById("setheight");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 32 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	setHeight.style.minHeight = bodyHeight + "px";
+}
+window.onload = heightChange();
+window.onresize = heightChange;
+</script>
+</div>
+</body>
+</html>

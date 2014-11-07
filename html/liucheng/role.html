@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>角色管理</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/base.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<style>
+	body{ background-color: #fff;}
+</style>	
+</head>
+<body>
+<div class="process">
+	<!-- 角色设置start -->
+	<h3 class="title">角色</h3>
+	<div class="pro-content">
+		<table class="role-set">
+			<caption>
+				<a href="javascript:;" class="oa-btn">新建</a>
+				<a href="javascript:;" class="oa-btn">删除</a>
+			</caption>
+			<thead>
+				<tr>
+					<th><p><input type="checkbox"/>角色设置</p></th>
+					<th><p>成员</p></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox"/><a href="">总经理</a></td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox">
+						<a href="">资产管理员组</a>
+						<td>2</td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox">
+						<a href="">资产管理员组</a>
+						<td>1</td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox">
+						<a href="">资产管理员组</a>
+						<td>2</td>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 角色设置end -->
+	<!-- 角色设置编辑start -->
+	<h3 class="title">编辑：角色设置</h3>
+	<div class="pro-content">
+		<table class="role-set-edit">
+			<caption><strong>角色设置</strong></caption>
+			<tbody>
+				<tr>
+					<th>角色名称</th>
+					<td><input type="text"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="subBox">
+			<a href="javascript:;" class="oa-btn">保存</a>
+			<a href="javascript:;" class="oa-btn">返回</a>
+		</div>
+		<table class="role-set-list">
+			<caption>
+				<div>
+					<a href="javascript:;" class="oa-btn">加入</a>
+					<a href="javascript:;" class="oa-btn">删除</a>
+				</div>
+				<strong>成员</strong>
+			</caption>
+			<thead>
+				<tr>
+					<th><input type="checkbox"/>成员</th>
+					<th>职务</th>
+					<th>部门</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox"><a href="#">王辉</a></td>
+					<td>主任助理兼品质保证部总监</td>
+					<td>主任办公室</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"><a href="#">朱明纶</a></td>
+					<td>中心主任</td>
+					<td>主任办公室</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"><a href="#">冯俊峰</a></td>
+					<td>中心副主任兼大学项目组总监</td>
+					<td>主任办公室</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"><a href="#">杨洁</a></td>
+					<td>行政专员监</td>
+					<td>人事行政部</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="subBox">
+			<a href="javascript:;" class="oa-btn">保存</a>
+			<a href="javascript:;" class="oa-btn">返回</a>
+		</div>
+	</div>
+	<!-- 角色设置编辑end -->
+</div>
+<!-- 弹框start -->
+	<div class="openBox">
+		<div class="yb_archi">
+			<ul>
+				<li>
+					<label for="">易班</label>
+					<ul>
+					<li>
+						<label for="">上海易班发展中心</label>
+						<ul>
+							<li><a href="#">财务部</a></li>
+							<li>
+								<label for="">大学易班项目组</label>
+								<ul>
+									<li><a href="#">大学易班项目组</a></li>
+								</ul>
+							</li>
+							<li>
+								<label for="">基础架构组</label>
+								<ul>
+									<li></li>
+								</ul>
+							</li>
+							<li>人事行政部</li>
+						</ul>
+					</li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="selBox clearfix">
+			<div class="sel-le">
+				<ul>
+					<li><span>盛彦广</span>大学易班 - 产品部</li>
+					<li><span>陆佳琦</span>大学易班 - 产品部</li>
+					<li><span>冯娟</span>大学易班 - 产品部</li>
+				</ul>
+			</div>
+			<div class="sel-ri">
+				<ul>
+					<li><span>张亮</span>大学易班 - 产品部</li>
+				</ul>
+			</div>
+		</div>
+		<div class="subBox">
+			<a href="javascript:;" class="oa-btn">确定</a>
+			<a href="javascript:;" class="oa-btn">清除</a>
+			<a href="javascript:;" class="oa-btn">取消</a>
+		</div>
+	</div>
+<!-- 弹框end -->
+<script src="../../protected/assets/js/jquery.min.js"></script>
+<script>
+showBox();
+	window.onresize = window.onscroll = showBox;
+	var timer = null;
+	// 弹出搜索职位框
+	function showBox(){
+		var oBox = $('.openBox');
+		if(oBox.is(':hidden')){
+			oBox.show();
+		}
+		clearTimeout(timer);
+		timer = setTimeout(function(){
+			oBox.animate({
+				top: $(window).scrollTop()+($(window).height() - oBox.outerHeight(true))/2,
+				left:($(window).width() - oBox.outerWidth(true))/2});
+		},200);
+	}
+	toggleMenu();
+	// 弹出层菜单展开折叠
+	function toggleMenu(){
+		var oTree = $('.yb_archi').children('ul');
+		oTree.find('label').click(function(){
+			if(!$(this).parent().is('.plus')){
+				$(this).next('ul').show();
+				$(this).parent().addClass('plus');
+			}else{
+				$(this).next('ul').hide();
+				$(this).parent().removeClass('plus');
+			}
+			showBox();
+		});
+
+	}	
+</script>		
+</body>
+</html>

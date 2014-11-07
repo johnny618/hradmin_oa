@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link href="../../protected/assets/css/set/set.css" rel="stylesheet" type="text/css" />
+<div class="pb20">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>表单管理：批量添加字段</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<!--[if IE]>
+<style type="text/css">
+	.tabbth_redact{margin-top: 2px;}
+    .tabbth_chact_check{margin: 3px 16px 0 0;}
+</style>
+<![endif]-->
+	<div class="set">
+		 <div class="settype"><!--流程类型 开始-->
+			<div class="settitle">表单管理：批量添加字段</div>
+			<div id="setheight" class="settype_main tabbth">
+            	<div class="tabbth_title">
+                	主字段信息
+                    <div class="tabbth_btn"><a href="javascript:void(0)">添加</a><a href="javascript:void(0)">删除</a><a href="javascript:void(0)">复制</a></div>
+                </div>
+				<div class="settype_table tabfd_table">
+                	<form name="tabbth_form" action="" method="post">
+                        <table class="tabbth_table" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th width="9"><div class="settype_margin"><p><input type="checkbox" name="tabbth_all" /></p></div></th>
+                                <th width="18%"><p>数据库字段名称</p></th>
+                                <th width="18%"><p>字段显示名</p></th>
+                                <th width="41%"><p>字段类型</p></th>
+                                <th width="14%"><p class="settype_p">顺序</p></th>
+                            </tr>
+                            <tr>
+                                <td><div class="settype_margin"><input type="checkbox" name="tabbth_check" /></div></td>
+                                <td><input class="fl" type="text" name="numer_name" value="" /><span class="fl">!</span></td>
+                                <td><input class="fl" type="text" name="text_name" value="" /><span class="fl">!</span></td>
+                                <td class="tabbth_minwth">
+                                	<select id="tabbth_select" class="fl tabbth_mr6" name="type">
+                                    	<option value="sel_box1">单行文本框</option>
+                                        <option value="sel_box2">多行文本框</option>
+                                        <option value="sel_box3">浏览按钮</option>
+                                        <option value="sel_box4">Check框</option>
+                                        <option value="sel_box5">选择框</option>
+                                        <option value="sel_box6">附件上传</option>
+                                        <option value="sel_box7">特殊字段</option>
+                                    </select>
+                                    <div id="sel_box1" class="tabbth_box tabbth_box_show clearfix"><!--单行文本框 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="文本">文本</option>
+                                            <option value="整数">整数</option>
+                                            <option value="浮点数">浮点数</option>
+                                            <option value="金额转换">金额转换</option>
+                                            <option value="金额千分位">金额千分位</option>
+                                        </select>
+                                        <em class="fl">文本长度</em>
+                                        <input class="tabbth_order fl" type="text" name="length" value="" />
+                                        <b class="fl">!</b>
+                                    </div><!--单行文本框 结束-->
+                                    <div id="sel_box2" class="tabbth_box clearfix"><!--多行文本框 开始-->
+                                    	<label class="fl">高度</label>
+                                        <input class="tabbth_order fl" type="text" name="height" value="1" />
+                                        <em class="fl">Html编辑字段</em>
+                                        <input class="tabbth_redact" type="checkbox" name="redact_check" />
+                                    </div><!--多行文本框 结束-->
+                                    <div id="sel_box3" class="tabbth_box clearfix"><!--浏览按钮 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl tabbth_box_select" name="type_sub">
+                                        	<option value="成本中心">成本中心</option>
+                                            <option value="币种">币种</option>
+                                            <option value="部门">部门</option>
+                                            <option value="仓库">仓库</option>
+                                            <option value="多文档">多文档</option>
+                                        </select>
+                                    </div><!--浏览按钮 结束-->
+                                    <div id="sel_box4" class="tabbth_box clearfix"><!--check 开始--></div><!--check 结束-->
+                                    <div id="sel_box5" class="tabbth_box clearfix"><!--选择框 开始-->
+                                    	<div class="tabbth_choose"><a href="javascript:void(0)">添加内容</a><a href="javascript:void(0)">删除内容</a></div>
+                                        <div class="tabbth_chact">
+                                        	<div class="tabbth_chact_title"><span>选中</span>可选文字</div>
+                                            <div class="tabbth_chact_input">
+                                            	<input class="tabbth_chact_check" type="checkbox" name="tabbth_chact" />
+                                                <input class="fl" type="text" name="chact_text" value="" />
+                                                <b>!</b>
+                                            </div>
+                                        </div>
+                                    </div><!--选择框 结束-->
+                                    <div id="sel_box6" class="tabbth_box clearfix"><!--附件上传 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select id="upload" class="fl" name="type_sub">
+                                        	<option value="tabbth_upimg1">上传文件</option>
+                                            <option value="tabbth_upimg2">上传图片</option>
+                                        </select>
+                                        <div id="tabbth_upimg1"></div>
+                                        <div id="tabbth_upimg2" class="tabbth_upload_img clearfix">
+                                        	<em class="fl">每行显示图片数</em>
+                                        	<input class="tabbth_order fl" type="text" name="length" value="" />
+                                        </div>
+                                    </div><!--附件上传 结束-->
+                                    <div id="sel_box7" class="tabbth_box clearfix"><!--特殊字段 开始-->
+                                    	<div class="tabbth_choose clearfix">
+                                        	<label class="fl">类型</label>
+                                        	<select class="fl" name="type_sub">
+                                        		<option value="自定义链接">自定义链接</option>
+                                            	<option value="描述性文字">描述性文字</option>
+                                        	</select>
+                                        </div>
+                                        <div class="tabbth_chact">
+                                            <ul class="clearfix">
+                                            	<li><label class="fl">显示名</label><input type="text" name="show_name" value="" /></li>
+                                                <li><label class="fl">链接地址</label><input type="text" name="show_name" value="" /></li>
+                                            </ul>
+                                            <p>外部地址请加上HTTP://</p>
+                                        </div>
+                                        <div class="tabbth_chact tabbth_chact_hide">
+                                            <label class="fl">描述性文字</label>
+                                            <textarea class="fl" name="describe_text"></textarea>
+                                        </div>
+                                    </div><!--特殊字段 结束-->
+                                </td>
+                                <td><input class="tabbth_order" type="text" name="order" value="1.00" /></td>
+                            </tr>
+                            <tr>
+                                <td><div class="settype_margin"><input type="checkbox" name="tabbth_check" /></div></td>
+                                <td><input class="fl" type="text" name="numer_name" value="" /><span class="fl">!</span></td>
+                                <td><input class="fl" type="text" name="text_name" value="" /><span class="fl">!</span></td>
+                                <td class="tabbth_minwth">
+                                	<select id="tabbth_select2" class="fl tabbth_mr6" name="type">
+                                    	<option value="tahbox1">单行文本框</option>
+                                        <option value="tahbox2">多行文本框</option>
+                                        <option value="tahbox3">浏览按钮</option>
+                                        <option value="tahbox4">Check框</option>
+                                        <option value="tahbox5">选择框</option>
+                                        <option value="tahbox6">附件上传</option>
+                                        <option value="tahbox7">特殊字段</option>
+                                    </select>
+                                    <div id="tahbox1" class="tabbth_box tabbth_box_show clearfix"><!--单行文本框 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="文本">文本</option>
+                                            <option value="整数">整数</option>
+                                            <option value="浮点数">浮点数</option>
+                                            <option value="金额转换">金额转换</option>
+                                            <option value="金额千分位">金额千分位</option>
+                                        </select>
+                                        <em class="fl">文本长度</em>
+                                        <input class="tabbth_order fl" type="text" name="length" value="" />
+                                        <b class="fl">!</b>
+                                    </div><!--单行文本框 结束-->
+                                    <div id="tahbox2" class="tabbth_box clearfix"><!--多行文本框 开始-->
+                                    	<label class="fl">高度</label>
+                                        <input class="tabbth_order fl" type="text" name="height" value="1" />
+                                        <em class="fl">Html编辑字段</em>
+                                        <input class="tabbth_redact" type="checkbox" name="redact_check" />
+                                    </div><!--多行文本框 结束-->
+                                    <div id="tahbox3" class="tabbth_box clearfix"><!--浏览按钮 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl tabbth_box_select" name="type_sub">
+                                        	<option value="成本中心">成本中心</option>
+                                            <option value="币种">币种</option>
+                                            <option value="部门">部门</option>
+                                            <option value="仓库">仓库</option>
+                                            <option value="多文档">多文档</option>
+                                        </select>
+                                    </div><!--浏览按钮 结束-->
+                                    <div id="tahbox4" class="tabbth_box clearfix"><!--check 开始--></div><!--check 结束-->
+                                    <div id="tahbox5" class="tabbth_box clearfix"><!--选择框 开始-->
+                                    	<div class="tabbth_choose"><a href="javascript:void(0)">添加内容</a><a href="javascript:void(0)">删除内容</a></div>
+                                        <div class="tabbth_chact">
+                                        	<div class="tabbth_chact_title"><span>选中</span>可选文字</div>
+                                            <div class="tabbth_chact_input">
+                                            	<input class="tabbth_chact_check" type="checkbox" name="tabbth_chact" />
+                                                <input class="fl" type="text" name="chact_text" value="" />
+                                                <b>!</b>
+                                            </div>
+                                        </div>
+                                    </div><!--选择框 结束-->
+                                    <div id="tahbox6" class="tabbth_box clearfix"><!--附件上传 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="上传文件">上传文件</option>
+                                            <option value="上传图片">上传图片</option>
+                                        </select>
+                                        <div class="tabbth_upload_img clearfix">
+                                        	<em class="fl">每行显示图片数</em>
+                                        	<input class="tabbth_order fl" type="text" name="length" value="" />
+                                        </div>
+                                    </div><!--附件上传 结束-->
+                                    <div id="tahbox7" class="tabbth_box clearfix"><!--特殊字段 开始-->
+                                    	<div class="tabbth_choose clearfix">
+                                        	<label class="fl">类型</label>
+                                        	<select class="fl" name="type_sub">
+                                        		<option value="自定义链接">自定义链接</option>
+                                            	<option value="描述性文字">描述性文字</option>
+                                        	</select>
+                                        </div>
+                                        <div class="tabbth_chact">
+                                            <ul class="clearfix">
+                                            	<li><label class="fl">显示名</label><input type="text" name="show_name" value="" /></li>
+                                                <li><label class="fl">链接地址</label><input type="text" name="show_name" value="" /></li>
+                                            </ul>
+                                            <p>外部地址请加上HTTP://</p>
+                                        </div>
+                                        <div class="tabbth_chact tabbth_chact_hide">
+                                            <label class="fl">描述性文字</label>
+                                            <textarea class="fl" name="describe_text"></textarea>
+                                        </div>
+                                    </div><!--特殊字段 结束-->
+                                </td>
+                                <td><input class="tabbth_order" type="text" name="order" value="1.00" /></td>
+                            </tr>
+                        </table>
+                        <div class="tabbth_add"><a href="#">添加多明细</a></div>
+                        <div class="tabbth_title tabbth_title_down">
+                    		<div class="tabbth_btn"><a href="javascript:void(0)">添加</a><a href="javascript:void(0)">删除</a><a href="javascript:void(0)">复制</a></div>
+                		</div>
+                        <table class="tabbth_table tabbth_table_down" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th width="9"><div class="settype_margin"><p><input type="checkbox" name="tabbth_all" /></p></div></th>
+                                <th width="18%"><p>数据库字段名称</p></th>
+                                <th width="18%"><p>字段显示名</p></th>
+                                <th width="41%"><p>字段类型</p></th>
+                                <th width="14%"><p class="settype_p">顺序</p></th>
+                            </tr>
+                            <tr>
+                                <td><div class="settype_margin"><input type="checkbox" name="tabbth_check" /></div></td>
+                                <td><input class="fl" type="text" name="numer_name" value="" /><span class="fl">!</span></td>
+                                <td><input class="fl" type="text" name="text_name" value="" /><span class="fl">!</span></td>
+                                <td class="tabbth_minwth">
+                                	<select id="tabbth_select3" class="fl tabbth_mr6" name="type">
+                                    	<option value="tabbox1">单行文本框</option>
+                                        <option value="tabbox2">多行文本框</option>
+                                        <option value="tabbox3">浏览按钮</option>
+                                        <option value="tabbox4">Check框</option>
+                                        <option value="tabbox5">选择框</option>
+                                        <option value="tabbox6">附件上传</option>
+                                        <option value="tabbox7">特殊字段</option>
+                                    </select>
+                                    <div id="tabbox1" class="tabbth_box tabbth_box_show clearfix"><!--单行文本框 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="文本">文本</option>
+                                            <option value="整数">整数</option>
+                                            <option value="浮点数">浮点数</option>
+                                            <option value="金额转换">金额转换</option>
+                                            <option value="金额千分位">金额千分位</option>
+                                        </select>
+                                        <em class="fl">文本长度</em>
+                                        <input class="tabbth_order fl" type="text" name="length" value="" />
+                                        <b class="fl">!</b>
+                                    </div><!--单行文本框 结束-->
+                                    <div id="tabbox2" class="tabbth_box clearfix"><!--多行文本框 开始-->
+                                    	<label class="fl">高度</label>
+                                        <input class="tabbth_order fl" type="text" name="height" value="1" />
+                                        <em class="fl">Html编辑字段</em>
+                                        <input class="tabbth_redact" type="checkbox" name="redact_check" />
+                                    </div><!--多行文本框 结束-->
+                                    <div id="tabbox3" class="tabbth_box clearfix"><!--浏览按钮 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl tabbth_box_select" name="type_sub">
+                                        	<option value="成本中心">成本中心</option>
+                                            <option value="币种">币种</option>
+                                            <option value="部门">部门</option>
+                                            <option value="仓库">仓库</option>
+                                            <option value="多文档">多文档</option>
+                                        </select>
+                                    </div><!--浏览按钮 结束-->
+                                    <div id="tabbox4" class="tabbth_box clearfix"><!--check 开始--></div><!--check 结束-->
+                                    <div id="tabbox5" class="tabbth_box clearfix"><!--选择框 开始-->
+                                    	<div class="tabbth_choose"><a href="javascript:void(0)">添加内容</a><a href="javascript:void(0)">删除内容</a></div>
+                                        <div class="tabbth_chact">
+                                        	<div class="tabbth_chact_title"><span>选中</span>可选文字</div>
+                                            <div class="tabbth_chact_input">
+                                            	<input class="tabbth_chact_check" type="checkbox" name="tabbth_chact" />
+                                                <input class="fl" type="text" name="chact_text" value="" />
+                                                <b>!</b>
+                                            </div>
+                                        </div>
+                                    </div><!--选择框 结束-->
+                                    <div id="tabbox6" class="tabbth_box clearfix"><!--附件上传 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="上传文件">上传文件</option>
+                                            <option value="上传图片">上传图片</option>
+                                        </select>
+                                        <div class="tabbth_upload_img clearfix">
+                                        	<em class="fl">每行显示图片数</em>
+                                        	<input class="tabbth_order fl" type="text" name="length" value="" />
+                                        </div>
+                                    </div><!--附件上传 结束-->
+                                    <div id="tabbox7" class="tabbth_box clearfix"><!--特殊字段 开始-->
+                                    	<div class="tabbth_choose clearfix">
+                                        	<label class="fl">类型</label>
+                                        	<select class="fl" name="type_sub">
+                                        		<option value="自定义链接">自定义链接</option>
+                                            	<option value="描述性文字">描述性文字</option>
+                                        	</select>
+                                        </div>
+                                        <div class="tabbth_chact">
+                                            <ul class="clearfix">
+                                            	<li><label class="fl">显示名</label><input type="text" name="show_name" value="" /></li>
+                                                <li><label class="fl">链接地址</label><input type="text" name="show_name" value="" /></li>
+                                            </ul>
+                                            <p>外部地址请加上HTTP://</p>
+                                        </div>
+                                        <div class="tabbth_chact tabbth_chact_hide">
+                                            <label class="fl">描述性文字</label>
+                                            <textarea class="fl" name="describe_text"></textarea>
+                                        </div>
+                                    </div><!--特殊字段 结束-->
+                                </td>
+                                <td><input class="tabbth_order" type="text" name="order" value="1.00" /></td>
+                            </tr>
+                            <tr>
+                                <td><div class="settype_margin"><input type="checkbox" name="tabbth_check" /></div></td>
+                                <td><input class="fl" type="text" name="numer_name" value="" /><span class="fl">!</span></td>
+                                <td><input class="fl" type="text" name="text_name" value="" /><span class="fl">!</span></td>
+                                <td class="tabbth_minwth">
+                                	<select id="tabbth_select4" class="fl tabbth_mr6" name="type">
+                                    	<option value="tab_sel1">单行文本框</option>
+                                        <option value="tab_sel2">多行文本框</option>
+                                        <option value="tab_sel3">浏览按钮</option>
+                                        <option value="tab_sel4">Check框</option>
+                                        <option value="tab_sel5">选择框</option>
+                                        <option value="tab_sel6">附件上传</option>
+                                        <option value="tab_sel7">特殊字段</option>
+                                    </select>
+                                    <div id="tab_sel1" class="tabbth_box tabbth_box_show clearfix"><!--单行文本框 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="文本">文本</option>
+                                            <option value="整数">整数</option>
+                                            <option value="浮点数">浮点数</option>
+                                            <option value="金额转换">金额转换</option>
+                                            <option value="金额千分位">金额千分位</option>
+                                        </select>
+                                        <em class="fl">文本长度</em>
+                                        <input class="tabbth_order fl" type="text" name="length" value="" />
+                                        <b class="fl">!</b>
+                                    </div><!--单行文本框 结束-->
+                                    <div id="tab_sel2" class="tabbth_box clearfix"><!--多行文本框 开始-->
+                                    	<label class="fl">高度</label>
+                                        <input class="tabbth_order fl" type="text" name="height" value="1" />
+                                        <em class="fl">Html编辑字段</em>
+                                        <input class="tabbth_redact" type="checkbox" name="redact_check" />
+                                    </div><!--多行文本框 结束-->
+                                    <div id="tab_sel3" class="tabbth_box clearfix"><!--浏览按钮 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl tabbth_box_select" name="type_sub">
+                                        	<option value="成本中心">成本中心</option>
+                                            <option value="币种">币种</option>
+                                            <option value="部门">部门</option>
+                                            <option value="仓库">仓库</option>
+                                            <option value="多文档">多文档</option>
+                                        </select>
+                                    </div><!--浏览按钮 结束-->
+                                    <div id="tab_sel4" class="tabbth_box clearfix"><!--check 开始--></div><!--check 结束-->
+                                    <div id="tab_sel5" class="tabbth_box clearfix"><!--选择框 开始-->
+                                    	<div class="tabbth_choose"><a href="javascript:void(0)">添加内容</a><a href="javascript:void(0)">删除内容</a></div>
+                                        <div class="tabbth_chact">
+                                        	<div class="tabbth_chact_title"><span>选中</span>可选文字</div>
+                                            <div class="tabbth_chact_input">
+                                            	<input class="tabbth_chact_check" type="checkbox" name="tabbth_chact" />
+                                                <input class="fl" type="text" name="chact_text" value="" />
+                                                <b>!</b>
+                                            </div>
+                                        </div>
+                                    </div><!--选择框 结束-->
+                                    <div id="tab_sel6" class="tabbth_box clearfix"><!--附件上传 开始-->
+                                    	<label class="fl">类型</label>
+                                        <select class="fl" name="type_sub">
+                                        	<option value="上传文件">上传文件</option>
+                                            <option value="上传图片">上传图片</option>
+                                        </select>
+                                        <div class="tabbth_upload_img clearfix">
+                                        	<em class="fl">每行显示图片数</em>
+                                        	<input class="tabbth_order fl" type="text" name="length" value="" />
+                                        </div>
+                                    </div><!--附件上传 结束-->
+                                    <div id="tab_sel7" class="tabbth_box clearfix"><!--特殊字段 开始-->
+                                    	<div class="tabbth_choose clearfix">
+                                        	<label class="fl">类型</label>
+                                        	<select class="fl" name="type_sub">
+                                        		<option value="自定义链接">自定义链接</option>
+                                            	<option value="描述性文字">描述性文字</option>
+                                        	</select>
+                                        </div>
+                                        <div class="tabbth_chact">
+                                            <ul class="clearfix">
+                                            	<li><label class="fl">显示名</label><input type="text" name="show_name" value="" /></li>
+                                                <li><label class="fl">链接地址</label><input type="text" name="show_name" value="" /></li>
+                                            </ul>
+                                            <p>外部地址请加上HTTP://</p>
+                                        </div>
+                                        <div class="tabbth_chact tabbth_chact_hide">
+                                            <label class="fl">描述性文字</label>
+                                            <textarea class="fl" name="describe_text"></textarea>
+                                        </div>
+                                    </div><!--特殊字段 结束-->
+                                </td>
+                                <td><input class="tabbth_order" type="text" name="order" value="1.00" /></td>
+                            </tr>
+                        </table>
+                        <div class="tabbth_btn_down"><a href="#">保存</a><a href="#">返回</a></div>
+                    </form>
+				</div>
+			</div>
+		</div><!--流程类型 结束-->
+	</div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>
+<script type="text/javascript">
+//自适应高度
+function heightChange(){
+	var setHeight = document.getElementById("setheight");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 32 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	setHeight.style.minHeight = bodyHeight + "px";
+}
+window.onload = heightChange();
+window.onresize = heightChange;
+$(function(){
+	$('#tabbth_select').change(function(){
+		hideAll("sel_box");
+		$("#" + $("#tabbth_select").val()).show();		
+	});
+	$("#tabbth_select2").change(function(){
+		hideAll("tahbox");
+		$("#" + $("#tabbth_select2").val()).show();	
+	});
+	$("#tabbth_select3").change(function(){
+		hideAll("tabbox");
+		$("#" + $("#tabbth_select3").val()).show();	
+	});
+	$("#tabbth_select4").change(function(){
+		hideAll("tab_sel");
+		$("#" + $("#tabbth_select4").val()).show();	
+	});
+	$("#upload").change(function(){
+		hideAll("tabbth_upimg");
+		$("#" + $("#upload").val()).show();
+	});
+	//$('#tabbth_select option').length 下拉菜单选项总数
+	function hideAll(hideId){
+		for(i=1;i<=$('#tabbth_select option').length;i++){
+			$('#' + hideId +i).hide();
+		}	
+	}
+	
+});
+</script>
+</div>
+</body>
+</html>

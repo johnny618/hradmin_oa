@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登入页面</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/base.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">	
+<style>
+body{ background:#4771a1;
+	background:-webkit-linear-gradient(left,#4771a1 0%,#93b8e2 50%,#4771a1 100%);
+	background:-moz-linear-gradient(left,#4771a1 0%,#93b8e2 50%,#4771a1 100%);
+	background:-ms-linear-gradient(left,#4771a1 0%,#93b8e2 50%,#4771a1 100%);
+	background:-o-linear-gradient(left,#4771a1 0%,#93b8e2 50%,#4771a1 100%);
+}
+
+</style>	
+</head>
+<body>
+	<div class="loginBox" id="loginBox">
+		<div class="logo"></div>
+		<div class="textBox">
+			<form action="" name="loginForm">
+				<input type="text" name="username" class="text" placeholder="用户名"/>
+				<input type="password" class="text" name="pass" placeholder="密码"/>
+				<input type="submit" value="登录" class="subBtn">
+				<a href="">找回密码</a>
+			</form>
+		</div>
+		<div class="boxbg"></div>
+	</div>
+<script>
+	window.onresize = setPos;
+	setPos();
+	function setPos(){
+		var oBox = document.getElementById('loginBox');
+		var iClientHeight = document.documentElement.clientHeight;
+		oBox.style.marginTop = parseInt((iClientHeight - oBox.offsetHeight)/2)+'px';
+		
+	}
+</script>	
+</body>
+</html>

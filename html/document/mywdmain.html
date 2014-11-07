@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>我的文档</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/document/document.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../protected/assets/js/oa.js"></script>
+</head>
+<body class="bodybg">
+<div class="pb20">
+	<div class="mywd"><!--我的文档 开始-->
+		<div class="mywd_main">
+			<div class="mywd_title"><span>我的文档</span></div>
+			<div id="mywd_box" class="mywd_box">
+				<div class="mywd_table">
+					<div class="mywd_table_box">
+						<table id="wywd" width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<th width="29%"><h3>文档</h3></th>
+								<th width="14%"><h3>所有者</h3></th>
+								<th width="18%"><h3>创建日期</h3></th>
+								<th width="19%"><h3>修改日期</h3></th>
+								<th width="20%"><h3>操作</h3></th>
+							</tr>
+							<tr>
+								<td><p><span>病假证明</span></p></td>
+								<td><p>MAKI</p></td>
+								<td><p>2014-05-01</p></td>
+								<td><p>2014-05-01</p></td>
+								<td><p><a href="#">编辑</a><a class="mywd_a" href="javascript:void(0)">删除</a></p></td>
+							</tr>
+							<tr>
+								<td><p>上戏校招X展架</p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+							</tr>
+							<tr>
+								<td><p>会议通知</p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+								<td><p></p></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+                <div class="page"><!--翻页部分 开始--></div><!--翻页部分 结束-->	
+			</div>	
+		</div>
+	</div><!--我的文档 结束-->
+    <script type="text/javascript">
+//获取浏览器窗口自适应容器高度
+function heightChange(){
+	var mywdBox = document.getElementById("mywd_box");
+	var bodyHeight = document.documentElement.clientHeight - 58 + "px";
+	mywdBox.style.minHeight = bodyHeight;
+	}
+window.onload = heightChange();
+window.onresize = heightChange;
+</script>
+</div>
+</body>
+</html>

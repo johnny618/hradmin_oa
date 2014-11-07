@@ -1,0 +1,454 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>出口信息</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div id="roadheight" class="set">
+	<div id="road_right" class="road_right"><!--右侧工作流 开始-->
+            	<div class="node_tab"><!--节点tab菜单 开始-->
+                	<ul class="clearfix">
+                    	<li class="node_tabborder"><a href="#">节点信息</a></li>
+                        <li><a href="#">出口信息</a></li>
+                        <li><a href="#">图形编辑</a></li>
+                    </ul>
+                </div><!--节点tab菜单 结束-->
+                <div class="wknde etne"><!--工作流节点 开始-->
+                	<div class="etne_title">
+                    	<select class="fl" name="nownode">
+                        	<option value="请选择当前节点">请选择当前节点</option>
+                            <option value="申请人">申请人</option>
+                            <option value="项目负责人">项目负责人</option>
+                            <option value="人事行政总监">人事行政总监</option>
+                            <option value="人事专员">人事专员</option>
+                        </select>
+                        <div class="etne_title_btn"><a href="#">添加节点</a><a href="#">删除节点</a></div>
+                    </div>
+                    <div class="wknde_table etne_table"><!--工作流节点表格 开始-->
+                    	<form name="etne_form" action="" method="post">
+                        	<table width="100%" cellpadding="0" cellspacing="0">
+                        		<tr>
+                            		<th width="10%"><h4 class="wknde_h4">选中</h4></th>
+                                	<th width="26%"><h4>节点名称</h4></th>
+                                	<th width="8%"><h4>是否退回</h4></th>
+                                	<th width="9%"><h4>条件</h4></th>
+                                    <th width="20%"><h4>出口名称</h4></th>
+                                    <th width="27%"><h4>目标节点</h4></th>
+                            	</tr>
+                            	<tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <!--调试-->
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td><input class="wknde_check" type="checkbox" name="checkworke" /></td>
+                                	<td>申请人</td>
+                                	<td><input type="checkbox" name="whether" /></td>
+                                    <td><a></a></td>
+                                    <td><input class="etne_input" type="text" name="names" value="" /></td>
+                                    <td>
+                                    	<select name="objective">
+                                        	<option value="项目负责人">项目负责人</option>
+                                            <option value="申请人">申请人</option>
+                                        </select>
+                                    </td>
+                            	</tr>
+                        	</table>
+                           	<div class="wknde_btn etne_btn"><a href="#">保存</a></div>
+                    	</form>
+                    </div><!--工作流节点表格 结束-->
+                </div><!--工作流节点 结束-->
+                <div class="etne_cdn"><!--条件弹出框 开始-->
+                	<form name="etne_cdn" action="" method="post">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                        	<tr>
+                            	<th width="6%"><input class="etne_check" type="checkbox" name="cdn_all" /></th>
+                            	<th width="12%"><h4 class="etne_h4">字段</h4></th>
+                                <th width="16%"><h4 class="etne_h4">条件类型</h4></th>
+                                <th width="16%"><h4>条件</h4></th>
+                                <th width="15%"><h4></h4></th>
+                                <th width="15%"><h4></h4></th>
+                                <th width="20%"><h4></h4></th>
+                            </tr>
+                            <tr height="65">
+                            	<td><input class="etne_check" type="checkbox" name="cdn_check" /></td>
+                                <td>申请人</td>
+                                <td>
+                                	<select name="type">
+                                    	<option value="时间">时间</option>
+                                        <option value="字符匹配">字符匹配</option>
+                                        <option value="数字">数字</option>
+                                    </select>
+                                </td>
+                                <td>
+                                	<div class="etne_select">
+                                        <select name="conditions">
+                                            <option value="属于">属于</option>
+                                            <option value="不属于">不属于</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select name="size">
+                                            <option value="大于">大于</option>
+                                            <option value="大于或等于">大于或等于</option>
+                                            <option value="小于">小于</option>
+                                            <option value="小于或等于">小于或等于</option>
+                                            <option value="等于">等于</option>
+                                            <option value="不等于">不等于</option>
+                                    	</select>
+                                    </div>
+                                </td>
+                                <td>
+                                	<a class="people_open"></a>
+                                    <input class="etne_names" type="text" name="cds_names" value="" />
+                                </td>
+                                <td>
+                                	<select name="size">
+                                    	<option value="大于">大于</option>
+                                        <option value="大于或等于">大于或等于</option>
+                                        <option value="小于">小于</option>
+                                        <option value="小于或等于">小于或等于</option>
+                                        <option value="等于">等于</option>
+                                        <option value="不等于">不等于</option>
+                                    </select>
+                                </td>
+                                <td><input class="etne_names" type="text" name="etne_text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><input class="etne_check" type="checkbox" name="cdn_check" /></td>
+                                <td>出生年月</td>
+                                 <td>
+                                	<select name="type">
+                                    	<option value="时间">时间</option>
+                                        <option value="字符匹配">字符匹配</option>
+                                        <option value="数字">数字</option>
+                                    </select>
+                                </td>
+                                <td>
+                                	<select name="conditions">
+                                   		<option value="属于">属于</option>
+                                        <option value="不属于">不属于</option>
+                                 	</select>
+                                </td>
+                                <td><a></a></td>
+                                <td>
+                                	<select name="size">
+                                    	<option value="大于">大于</option>
+                                        <option value="大于或等于">大于或等于</option>
+                                        <option value="小于">小于</option>
+                                        <option value="小于或等于">小于或等于</option>
+                                        <option value="等于">等于</option>
+                                        <option value="不等于">不等于</option>
+                                    </select>
+                                </td>
+                                <td><a></a></td>
+                            </tr>
+                            <tr>
+                            	<td><input class="etne_check" type="checkbox" name="cdn_check" /></td>
+                                <td>性别	</td>
+                                 <td>
+                                	<select name="sex">
+                                    	<option value="等于">等于</option>
+                                        <option value="不大于">不大于</option>
+                                    </select>
+                                </td>
+                                <td>
+                                	<select name="size">
+                                    	<option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </td>
+                                <td><a></a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                            	<td><input class="etne_check" type="checkbox" name="cdn_check" /></td>
+                                <td>毕业院校</td>
+                                 <td>
+                                	<select name="sex">
+                                    	<option value="等于">等于</option>
+                                        <option value="不等于">不等于</option>
+                                        <option value="包含">包含</option>
+                                        <option value="不包含">不包含</option>
+                                    </select>
+                                </td>
+                                <td><input class="etne_names" type="text" name="cds_names" value="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                            	<td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="etne_cdnbtn"><a>确定</a><a class="esc">返回</a></div>
+                    </form>
+				</div><!--条件弹出框 结束-->
+                <div class="aut_adddiv"><!--人力资源 开始-->
+                	<div class="aut_ddiv_nav aut_people"><!--人力资源上部分 开始-->
+                    	<h4>易班</h4>
+                        <div class="aut_ddiv_sub aut_people_sub">
+                        	<div class="aut_people_color">
+                                <h5>上海易班发展中心</h5>
+                                <ul>
+                                    <li>
+                                        <h6>财务部</h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">大学易班项目</h6>
+                                        <div class="aut_ddiv_subbox">
+                                            <p>大学易班-产品部</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">基础架构项目组</h6>
+                                    </li>
+                                    <li>
+                                        <h6>人事行政部</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aut_people_color">
+                                <h5>上海易班发展中心</h5>
+                                <ul>
+                                    <li>
+                                        <h6>财务部</h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">大学易班项目</h6>
+                                        <div class="aut_ddiv_subbox">
+                                            <p>大学易班-产品部</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">基础架构项目组</h6>
+                                    </li>
+                                    <li>
+                                        <h6>人事行政部</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--人力资源上部分 结束-->
+                    <div class="atu_pbox">
+                    	<div class="atu_pboxtit">已选择 <span>1</span> 人</div>
+                        <div class="atu_pbbox">
+                        	<div class="atu_pbbox_box fl"><!--左边选择框 开始-->
+                            	<ul class="clearfix">
+                                	<li><span class="fl">盛彦广</span><p class="fl">大学易班 - 产品部</p></li>
+                                    <li><span class="fl">陆佳琦</span><p class="fl">大学易班 - 产品部</p></li>
+                                    <li><span class="fl">冯娟</span><p class="fl">大学易班 - 产品部</p></li> 
+                                </ul>
+                            </div><!--左边选择框 结束-->
+                            <div class="atu_pbbox_box fr"><!--右边选择框 结束-->
+                            	<ul>
+                                	<li><span class="fl">张亮</span><p class="fl">大学易班 - 产品部</p></li>
+                                </ul>
+                            </div><!--右边选择框 结束-->
+                        </div>
+                    </div>
+                    <div class="aut_add_btn"><a>确定</a><a href="#">清楚</a><a class="aut_close">取消</a></div>
+                </div><!--人力资源 结束-->
+                <div id="eten_div"><!--遮罩层 开始--></div><!--遮罩层 结束-->
+            </div><!--右侧工作流 结束-->
+         </div>
+<script type="text/javascript">
+//自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight;
+	roadRight.style.minHeight = bodyHeight -9 - 15 + "px";   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+}
+window.onload = heightChange();
+window.onresize = heightChange;
+//表格设置
+$(function(){
+	$(".wknde_table tr:odd").find("td").css({"background-color":"#f9f9f9","border-bottom-color":"#f4f6f7"});
+	$(".etne_cdn table tr:odd").find("td").css({"background-color":"#f9f9f9","border-bottom-color":"#f4f6f7"});
+	$(".etne_table table a").click(function(){
+		var etneHeight = $("#road_right").height();
+		$("#eten_div").css("min-height",etneHeight);
+		$("#eten_div").show();
+		$(".etne_cdn").show();
+		$(".etne_cdn").animate({top:28},"slow");
+	});
+	$(".etne_cdnbtn .esc").click(function(){
+		$(".etne_cdn").animate({top:-537},"slow",function(){
+			$(".etne_cdn").hide();
+			$("#eten_div").hide();	
+			});
+		});
+	$(".people_open").click(function(){
+		$(".aut_adddiv").show();
+		$(".aut_adddiv").animate({top:296},"slow");	
+	});	
+});
+</script>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>	
+</div>
+</body>
+</html>

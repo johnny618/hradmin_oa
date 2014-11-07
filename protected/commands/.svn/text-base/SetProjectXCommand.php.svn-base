@@ -1,0 +1,25 @@
+<?php
+Yii::import('application.modules.Admin.models.*');
+Yii::import('application.modules.Home.models.*');
+
+class SetProjectXCommand extends CConsoleCommand {
+
+    public function actionIndex() {
+        $item = ProjectItem::model()->find('type="x" order by end_time DESC');
+        $end_time = $item->end_time;
+        if (date('Y-m-d') != $end_time) {
+            echo "not in time\n";
+            return;
+        }
+        $CDbCriteria = new CDbCriteria;
+        $CDbCriteria->compare('category', 'x');
+        $CDbCriteria->compare('datetime', date('Y'), true);
+        $projects = ProjectInformation::model()->findAll($CDbCriteria);
+        echo "has " . count($projects) . ' projects\n';
+        foreach ($projects as $project) {
+            $project->step = ProjectInformation::COMPLETE_STATE;
+            $project->save();
+        }
+        echo "All Done\n";
+    }
+}

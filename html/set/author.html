@@ -1,0 +1,295 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>操作者条件</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div id="roadheight" class="set">
+	<div id="road_right" class="road_right"><!--右侧工作流 开始-->
+            	<div class="node_tab"><!--节点tab菜单 开始-->
+                	<ul class="clearfix">
+                    	<li class="node_tabborder"><a href="#">节点信息</a></li>
+                        <li><a href="#">出口信息</a></li>
+                        <li><a href="#">图形编辑</a></li>
+                    </ul>
+                </div><!--节点tab菜单 结束-->
+                <form name="autoform" action="" method="post">
+                	<div class="aut_basic">
+                		<h3>基本信息</h3>
+                    	<div class="aut_name">
+                    		<label class="fl">操作组名称</label>
+                        	<input class="fr" type="text" name="names" value="" />
+                    	</div>
+                	</div>
+                	<div class="aut_cts">
+                		<h3>操作者条件</h3>
+                    	<div class="aut_radio">
+                        	<label for="yib"><input id="yib" type="radio" name="cts" checked="checked" /><span>一般</span></label>
+							<label for="people"><input id="people" type="radio" name="cts" /><span>人力资源字段</span></label>
+                        	<label for="document"><input id="document" type="radio" name="cts" /><span>文档字段</span></label>
+                        	<label for="xmzd"><input id="xmzd" type="radio" name="cts" /><span>项目字段</span></label>
+                        	<label for="zczd"><input id="zczd" type="radio" name="cts" /><span>资产字段</span></label>
+                        	<label for="khzd"><input id="khzd" type="radio" name="cts" /><span>客户字段</span></label>
+                        	<label for="cjr"><input id="cjr" type="radio" name="cts" /><span>创建人</span></label>
+                            <label for="jdczz"><input id="jdczz" type="radio" name="cts" /><span>节点操作者</span></label>
+                       	</div>
+                        <!--[if IE]>
+                        	<style type="text/css">
+                            	.aut_ctsbox input.fl{margin: 8px 4px 0 30px;}
+                                .aut_table table th input{margin-top: 14px;}
+                            </style>
+                        <![endif]-->
+                        <div class="aut_ctsbox">
+                        	<ul class="clearfix">
+                            	<li>
+                                	<input id="door" class="fl" type="radio" name="radio_cts" />
+                                    <label for="door" class="fl">部门</label>
+                                    <select class="fl" name="door_select">
+                                    	<option value="属于">属于</option>
+                                        <option value="不属于">不属于</option>
+                                    </select>
+                                    <a class="fl"></a>
+                                    <div class="aut_cts_text fl">jlkjjkl</div>
+                                </li>
+                                <li>
+                                	<input id="role" class="fl" type="radio" name="radio_cts" />
+                                    <label for="role" class="fl">角色</label>
+                                    <select class="fl" name="door_select">
+                                    	<option value="包含">包含</option>
+                                        <option value="不包含">不包含</option>
+                                    </select>
+                                    <a class="fl"></a>
+                                    <div class="aut_cts_text fl">jlkjjkl</div>
+                                </li>
+                                <li>
+                                	<input id="person" class="fl" type="radio" name="radio_cts" />
+                                    <label for="person" class="fl">人力资源</label>
+                                    <select class="fl" name="door_select">
+                                    	<option value="属于">包含</option>
+                                        <option value="不属于">不包含</option>
+                                    </select>
+                                    <a class="fl"></a>
+                                    <div class="aut_cts_text fl">jlkjjkl</div>
+                                </li>
+                                <li>
+                                	<input id="everybody" class="fl" type="radio" name="radio_cts" />
+                                    <label for="everybody"  class="fl">所有人</label>
+                                </li>
+                            </ul>
+                        </div>
+                	</div>
+                    <div class="aut_act">
+                    	<div class="aut_actbtn"><a class="aut_actbtn_a" onclick="addCondition()">添加条件</a><a>删除条件</a></div>
+                        <div class="aut_table">
+                        	<table id="aut_table" width="100%" cellpadding="0" cellspacing="0">
+                            	<tr>
+                            		<th width="11%"><input type="checkbox" name="check_all" /></th>
+                                	<th width="18%"><h4>类型</h4></th>
+                                	<th width="43%"><h4>名称</h4></th>
+                                	<th width="28%"><h4>级别</h4></th>
+                            	</tr>
+                            </table>
+                            <div class="aut_act_btn"><a href="#">保存</a><a href="#">返回</a></div>
+                        </div>
+                    </div>
+                </form>
+                <div id="aut_div" class="aut_div"><!--遮罩层 --></div>
+                <div class="aut_adddiv"><!--部门弹出层 开始-->
+                	<div class="aut_ddiv_nav">
+                    	<h4>易班</h4>
+                        <div class="aut_ddiv_sub">
+                        	<h5>上海易班发展中心</h5>
+                            <ul>
+                            	<li>
+                                	<h6><input type="checkbox" name="door_btn" /><label>财务部</label></h6>
+                                </li>
+                                <li>
+                                	<h6 class="aut_ddiv_subbg"><input type="checkbox" name="door_btn" /><label>大学易班项目组</label></h6>
+                                    <div class="aut_ddiv_subbox">
+                                    	<p><input type="checkbox" name="door_btn" /><label>大学易班-产品部</label></p>
+                                    </div>
+                                </li>
+                                <li>
+                                	<h6 class="aut_ddiv_subbg"><input type="checkbox" name="door_btn" /><label>基础架构项目组</label></h6>
+                                </li>
+                                <li>
+                                	<h6><input type="checkbox" name="door_btn" /><label>人事行政部</label></h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4>易班</h4>
+                        <div class="aut_ddiv_sub">
+                        	<h5>上海易班发展中心</h5>
+                            <ul>
+                            	<li>
+                                	<h6><input type="checkbox" name="door_btn" /><label>财务部</label></h6>
+                                </li>
+                                <li>
+                                	<h6 class="aut_ddiv_subbg"><input type="checkbox" name="door_btn" /><label>大学易班项目组</label></h6>
+                                    <div class="aut_ddiv_subbox">
+                                    	<p><input type="checkbox" name="door_btn" /><label>大学易班-产品部</label></p>
+                                    </div>
+                                </li>
+                                <li>
+                                	<h6 class="aut_ddiv_subbg"><input type="checkbox" name="door_btn" /><label>基础架构项目组</label></h6>
+                                </li>
+                                <li>
+                                	<h6><input type="checkbox" name="door_btn" /><label>人事行政部</label></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aut_add_btn"><a>确定</a><a href="#">清楚</a><a class="aut_close">取消</a></div>
+                </div><!--部门弹出层 结束 -->
+                <div class="aut_adddiv"><!--角色弹出层 开始-->
+                	<div class="aut_jus">
+                    	<div class="aut_justit">
+                        	<ul>
+                            	<li>角色名称</li>
+                                <li>说明</li>
+                            </ul>
+                        </div>
+                      <div class="aut_justxt">
+                        	<ul class="clearfix">
+                            	<li class="aut_jusbg">
+                                	<span class="fl">部门主管</span>
+                                    <span class="fr">部门主管</span>
+                                    <div class="aut_justxt_bg"></div>
+                                </li>
+                                <li>
+                                	<span class="fl">财务管理员</span>
+                                    <span class="fr">财务管理员</span>
+                                    <div class="aut_justxt_bg"></div>
+                                </li>
+                                <li>
+                                	<span class="fl">财务人员</span>
+                                    <span class="fr">财务人员</span>
+                                    <div class="aut_justxt_bg"></div>
+                                </li>
+                                <li>
+                                	<span class="fl">出纳</span>
+                                    <span class="fr">出纳</span>
+                                    <div class="aut_justxt_bg"></div>
+                                </li>
+                                <li>
+                                	<span class="fl">人事经理</span>
+                                	<span class="fr">人事经理</span>
+                                    <div class="aut_justxt_bg"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--角色弹出层 结束 -->
+                <div class="aut_adddiv"><!--人力资源 开始-->
+                	<div class="aut_ddiv_nav aut_people"><!--人力资源上部分 开始-->
+                    	<h4>易班</h4>
+                        <div class="aut_ddiv_sub aut_people_sub">
+                        	<div class="aut_people_color">
+                                <h5>上海易班发展中心</h5>
+                                <ul>
+                                    <li>
+                                        <h6>财务部</h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">大学易班项目</h6>
+                                        <div class="aut_ddiv_subbox">
+                                            <p>大学易班-产品部</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">基础架构项目组</h6>
+                                    </li>
+                                    <li>
+                                        <h6>人事行政部</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aut_people_color">
+                                <h5>上海易班发展中心</h5>
+                                <ul>
+                                    <li>
+                                        <h6>财务部</h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">大学易班项目</h6>
+                                        <div class="aut_ddiv_subbox">
+                                            <p>大学易班-产品部</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h6 class="aut_ddiv_subbg">基础架构项目组</h6>
+                                    </li>
+                                    <li>
+                                        <h6>人事行政部</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--人力资源上部分 结束-->
+                    <div class="atu_pbox">
+                    	<div class="atu_pboxtit">已选择 <span>1</span> 人</div>
+                        <div class="atu_pbbox">
+                        	<div class="atu_pbbox_box fl"><!--左边选择框 开始-->
+                            	<ul class="clearfix">
+                                	<li><span class="fl">盛彦广</span><p class="fl">大学易班 - 产品部</p></li>
+                                    <li><span class="fl">陆佳琦</span><p class="fl">大学易班 - 产品部</p></li>
+                                    <li><span class="fl">冯娟</span><p class="fl">大学易班 - 产品部</p></li> 
+                                </ul>
+                            </div><!--左边选择框 结束-->
+                            <div class="atu_pbbox_box fr"><!--右边选择框 结束-->
+                            	<ul>
+                                	<li><span class="fl">张亮</span><p class="fl">大学易班 - 产品部</p></li>
+                                </ul>
+                            </div><!--右边选择框 结束-->
+                        </div>
+                    </div>
+                    <div class="aut_add_btn"><a>确定</a><a href="#">清楚</a><a class="aut_close">取消</a></div>
+                </div><!--人力资源 结束-->
+            </div><!--右侧工作流 结束-->
+         </div>
+ <script type="text/javascript">
+ //自适应高度
+function heightChange(){	
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight;
+	var autDiv = document.getElementById("aut_div");
+	roadRight.style.minHeight = bodyHeight -9 - 15 + "px";   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	autDiv.style.height = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+$(function(){
+	//表单/边框背景等等设置
+	$(".aut_ctsbox li:odd").css("background-color","#f9f9f9");
+	$(".aut_ctsbox li:last").css("border","none");
+	$(".aut_table table tr:odd").find("td").css("background-color","#f9f9f9");
+	$(".aut_justxt li").mouseover(function(){
+		$(this).find(".aut_justxt_bg").show();
+		$(this).css("color","#fff");
+		$(this).siblings().find(".aut_justxt_bg").hide();
+		$(this).siblings().css("color","#7c7c7c");	
+	});
+	$(".aut_justxt li:even").css({"background-color":"#f9f9f9","border-bottom-color":"#f4f6f7 "});
+	//功能
+});
+//添加条件
+function addCondition(){
+	var autTable = document.getElementById("aut_table");
+	var tr = document.createElement("tr");
+	//var nameValue = document.forms["autoform"].names.value;
+	autTable.appendChild(tr);
+	tr.innerHTML = '<td>' +'<input type="checkbox" name="appcheck">' + '</td>' + 
+				   '<td>所有人</td>' +
+				   '<td id="names"></td>' +
+				   '<td>总部</td>';
+}
+</script>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>
+</div>	
+</body>
+</html>

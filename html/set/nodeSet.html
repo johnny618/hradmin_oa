@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>路径设置</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div id="roadheight" class="set">
+	<div id="road_right" class="road_right"><!--右侧工作流 开始-->
+            	<div class="node_tab"><!--节点tab菜单 开始-->
+                	<ul class="clearfix">
+                    	<li class="node_tabborder"><a href="#">节点信息</a></li>
+                        <li><a href="#">出口信息</a></li>
+                        <li><a href="#">图形编辑</a></li>
+                    </ul>
+                </div><!--节点tab菜单 结束-->
+                <div class="node_table"><!--节点表格 开始-->
+                	<div class="node_btn">节点字段设置</div>
+                    <form name="nodeset_fomr" action="" method="post">
+                    	<table width="96%" cellpadding="0" cellspacing="0">
+                    		<tr>
+                        		<th width="37%"><h4 class="node_margin">字段名称</h4></th>
+                            	<th width="21%"><h4><input id="check_show" type="checkbox" name="show" onclick="checkAll(this.form.show_id,this.form.check_show)" />是否显示</h4></th>
+                            	<th width="26%"><h4><input id="check_set" type="checkbox" name="set" onclick="checkAll(this.form.set_id,this.form.check_set)" />是否可编辑</h4></th>
+                            	<th width="16%"><h4 class="nodeset_h4"><input id="check_into" type="checkbox" name="into" onclick="checkAll(this.form.into_id, this.form.check_into)" />是否必须输入</h4></th>
+                        	</tr>
+                        	<tr>
+                        		<td><label>标题</label></td>
+                            	<td><input id="show_id" type="checkbox" name="showsub" /></td>
+                            	<td><input id="set_id"  type="checkbox" name="setsub" /></td>
+                            	<td><input id="into_id" type="checkbox" name="intosub" /></td>
+                        	</tr>
+                            <tr>
+                                <td><label>紧急程度</label></td>
+                                <td><input id="show_id" type="checkbox" name="showsub" /></td>
+                                <td><input id="set_id"  type="checkbox" name="setsub" /></td>
+                                <td><input id="into_id" type="checkbox" name="intosub" /></td>
+                            </tr>
+                            <tr>
+                                <td><label>申请人</label></td>
+                                <td><input id="show_id" type="checkbox" name="showsub" /></td>
+                                <td><input id="set_id"  type="checkbox" name="setsub" /></td>
+                                <td><input id="into_id" type="checkbox" name="intosub" /></td>
+                            </tr>
+                            <tr>
+                                <td><label>出生年月</label></td>
+                                <td><input id="show_id" type="checkbox" name="showsub" /></td>
+                                <td><input id="set_id"  type="checkbox" name="setsub" /></td>
+                                <td><input id="into_id" type="checkbox" name="intosub" /></td>
+                            </tr>
+                            <tr>
+                                <td><label>性别</label></td>
+                                <td><input id="show_id" type="checkbox" name="showsub" /></td>
+                                <td><input id="set_id"  type="checkbox" name="setsub" /></td>
+                                <td><input id="into_id" type="checkbox" name="intosub" /></td>
+                            </tr>
+                    	</table>
+                        <div class="nodeset_btn"><a class="nodeset_margin" href="#">保存</a><a href="#">返回</a></div>
+                    </form>
+                </div><!--节点表格 结束-->
+            </div><!--右侧工作流结束-->
+         </div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>	
+ <script type="text/javascript">
+ //自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	roadRight.style.minHeight = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+//表单设置
+$(function(){
+	$(".node_table tr:odd").find("td").css({"background-color":"#f9f9f9","border-bottom-color":"#eef1f2"});
+	});
+</script>
+</div>
+</body>
+</html>

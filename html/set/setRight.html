@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>路径设置</title>
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/home.css">
+<link rel="stylesheet" type="text/css" href="../../protected/assets/css/set/set.css">
+<script type="text/javascript" src="../../protected/assets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="pb20">
+	<div id="roadheight" class="set">
+	<div id="road_right" class="road_right"><!--右侧工作流 开始-->
+            	<div class="road_title">工作流</div>
+                <div class="road_form">
+                	<form name="workform" action="" method="post">
+                    	<div class="road_ftop">
+                    		<div class="road_ftop_left fl">
+                        		<label class="fl">工作流类型</label>
+                            	<select name="type">
+                            		<option value="人事管理">人事管理</option>
+                            	</select>
+                        	</div>
+                        	<div class="road_ftop_right fr">
+                        		<label class="fl">工作流名称</label>
+                            	<input class="fl" type="text" name="workname" value="" />
+                        	</div>
+                    	</div>
+                        <a class="road_delete" href="javascript:void(0)" onclick="deteTab()">删除</a>
+                        <table id="road_table" cellpadding="0" cellspacing="0">
+                        	<tr>
+                            	<th width="11%"><input id="chk_all" type="checkbox" name="all" onclick="checkAll(this.form.chk_id, this.form.chk_all)" /></th>
+                                <th width="26%"><h4>工作流名称</h4></th>
+                                <th width="21%"><h4>工作流描述</h4></th>
+                                <th width="26%"><h4>对应表单</h4></th>
+                                <th width="16%"><h4 class="road_h4">工作流类型</h4></th>
+                            </tr>
+                            <tr class="tr_class">
+                            	<td><input id="chk_id" type="checkbox" name="work" /></td>
+                                <td><span>内部讲师申请</span></td>
+                                <td></td>
+                                <td>内部讲师申请表（易班）</td>
+                                <td>人事管理</td>	
+                            </tr>
+                            <tr class="tr_class">
+                            	<td><input id="chk_id" type="checkbox" name="work" /></td>
+                                <td>内部竞聘申请（暂无）</td>
+                                <td></td>
+                                <td>员工内部竞聘申请表（易班）</td>
+                                <td>人事管理</td>
+                            </tr>
+                            <tr class="tr_class">
+                            	<td><input id="chk_id"  type="checkbox" name="work" /></td>
+                                <td>培训申请</td>
+                                <td></td>
+                                <td>培训申请表（易班）</td>
+                                <td>人事管理</td>
+                            </tr>
+                            <tr class="tr_class">
+                            	<td><input id="chk_id" type="checkbox" name="work" /></td>
+                                <td>人才推荐审批（12个需求岗位）</td>
+                                <td></td>
+                                <td>人才推荐表（易班）</td>
+                                <td>人事管理</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div><!--右侧工作流结束--></div>
+<script type="text/javascript" src="../../protected/assets/js/set/set.js"></script>	
+ <script type="text/javascript">
+ //自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	roadRight.style.minHeight = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+//自适应高度
+function heightChange(){
+	var roadRight = document.getElementById("road_right");
+	var bodyHeight = document.documentElement.clientHeight - 9 - 15;   //9代表的是上外边距，32是标题栏的高度，15是距离浏览器下部分的距离
+	roadRight.style.minHeight = bodyHeight + "px";
+}
+heightChange();
+window.onresize = heightChange;
+//删除表格列
+function deteTab(){
+	var table = document.getElementById("road_table");
+	var tr = table.getElementsByClassName("tr_class");
+	var checks = document.workform.work;
+	if (checks.length > 0){
+		for (var i = 0; i < checks.length; i++){
+			if (checks[i].checked == true){
+				tr[i].style.display = "none";
+			} 
+		}
+	}
+}
+ </script>
+</div>
+</body>
+</html>
